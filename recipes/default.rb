@@ -17,11 +17,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-if platform?("centos","redhat","debian","ubuntu")
+if platform?("amazon","centos","redhat","scientific","debian","ubuntu")
 
   package value_for_platform(
+    "amazon" => { "default" => "rubygem-stompserver" },
     "centos" => { "default" => "rubygem-stompserver" },
     "redhat" => { "default" => "rubygem-stompserver" },
+    "scientific" => { "default" => "rubygem-stompserver" },
     "debian" => { "default" => "stompserver" },
     "ubuntu" => { "default" => "stompserver" },
     "default" => "stompserver"
