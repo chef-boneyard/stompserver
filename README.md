@@ -16,7 +16,7 @@ Usage
 
 This cookbook was primarily used when the Chef Server used stompserver
 as the message queue. This may still be useful for some people.
-Packages exist for Debian/Ubuntu but not RHEL. See __Roadmap__.
+Packages exist for Debian/Ubuntu but not RHEL.
 
 License and Author
 ==================
