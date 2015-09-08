@@ -17,19 +17,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-if platform?("centos","redhat","debian","ubuntu")
+if platform?('centos', 'redhat', 'debian', 'ubuntu')
 
   package value_for_platform(
-    "centos" => { "default" => "rubygem-stompserver" },
-    "redhat" => { "default" => "rubygem-stompserver" },
-    "debian" => { "default" => "stompserver" },
-    "ubuntu" => { "default" => "stompserver" },
-    "default" => "stompserver"
+    'centos' => { 'default' => 'rubygem-stompserver' },
+    'redhat' => { 'default' => 'rubygem-stompserver' },
+    'debian' => { 'default' => 'stompserver' },
+    'ubuntu' => { 'default' => 'stompserver' },
+    'default' => 'stompserver'
   )
 
-  service "stompserver" do
-    supports [ :restart, :reload, :status ]
-    action [ :enable, :start ]
+  service 'stompserver' do
+    supports [:restart, :reload, :status]
+    action [:enable, :start]
   end
 
 end
