@@ -8,7 +8,7 @@ version '1.0.1'
 
 recipe 'stompserver', 'Installs stompserver and starts the service'
 
-%w( ubuntu debian centos fedora redhat ).each do |os|
+%w( ubuntu debian centos fedora redhat oracle scientific amazon ).each do |os|
   supports os
 end
 
