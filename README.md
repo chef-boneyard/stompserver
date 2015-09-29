@@ -5,29 +5,38 @@ stompserver Cookbook
 
 Installs stompserver and sets it up as a service.
 
+
 Requirements
-============
+------------
+#### Platforms
+- Debian/Ubuntu
+- RHEL/CentOS/Scientific/Amazon/Oracle
 
-## Platform:
+#### Chef
+- Chef 11+
 
-* Debian/Ubuntu
-* RHEL/CentOS/Fedora
+#### Cookbooks
+- java
+
+
+
 
 Usage
-=====
+-----
 
 This cookbook was primarily used when the Chef Server used stompserver
 as the message queue. This may still be useful for some people.
 Packages exist for Debian/Ubuntu but not RHEL.
 
-License and Author
-==================
 
-Author:: Joshua Timberman <joshua@chef.io>
+License & Authors
+-----------------
 
-```text
-Copyright:: 2008-2015, Chef Software, Inc
+**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
 
+**Copyright:** 2008-2015, Chef Software, Inc.
+
+```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
