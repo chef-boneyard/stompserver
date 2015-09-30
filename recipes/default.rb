@@ -3,7 +3,7 @@
 # Cookbook Name:: stompserver
 # Recipe:: default
 #
-# Copyright 2008-2009, Chef Software, Inc
+# Copyright 2008-2015, Chef Software, Inc
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,19 +17,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-if platform?('centos', 'redhat', 'debian', 'ubuntu')
+if platform_family?('debian')
 
-  package value_for_platform(
-    'centos' => { 'default' => 'rubygem-stompserver' },
-    'redhat' => { 'default' => 'rubygem-stompserver' },
-    'debian' => { 'default' => 'stompserver' },
-    'ubuntu' => { 'default' => 'stompserver' },
-    'default' => 'stompserver'
-  )
+  package stompserver
 
   service 'stompserver' do
     supports [:restart, :reload, :status]
     action [:enable, :start]
   end
 
+else
+  Chef::Log.fatal("The Stomp cookbook does not support #{node.platform}")
 end

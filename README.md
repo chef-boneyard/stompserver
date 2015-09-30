@@ -10,15 +10,12 @@ Requirements
 ------------
 #### Platforms
 - Debian/Ubuntu
-- RHEL/CentOS/Scientific/Amazon/Oracle
 
 #### Chef
 - Chef 11+
 
 #### Cookbooks
 - java
-
-
 
 
 Usage
