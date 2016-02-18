@@ -5,6 +5,8 @@ stompserver Cookbook
 
 Installs stompserver and sets it up as a service.
 
+# DEPRECATION
+As stompserver has not been updated since 2008 we're chosen to deprecate this cookbook.
 
 Requirements
 ------------
