@@ -4,7 +4,7 @@ maintainer_email  'cookbooks@chef.io'
 license           'Apache 2.0'
 description       'Installs stompserver and sets up a service'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '1.1.0'
+version          '2.0.0'
 
 recipe 'stompserver', 'Installs stompserver and starts the service'
 
@@ -14,5 +14,4 @@ end
 
 source_url 'https://github.com/chef-cookbooks/stompserver'
 issues_url 'https://github.com/chef-cookbooks/stompserver/issues'
-
 chef_version '>= 12.1'

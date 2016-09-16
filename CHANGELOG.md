@@ -2,6 +2,11 @@ stompserver Cookbook CHANGELOG
 ==============================
 This file is used to list changes made in each version of the stompserver cookbook.
 
+## 2.0.0 (2016-09-16)
+- Testing updates
+- Add chef_version metadata
+- Require Chef 12.1+
+
 ## v1.1.0
 * Updated to platform_family to support additional platforms
 * Added gitignore and chefignore files
