@@ -12,7 +12,7 @@ recipe 'stompserver', 'Installs stompserver and starts the service'
   supports os
 end
 
-source_url 'https://github.com/chef-cookbooks/stompserver' if respond_to?(:source_url)
-issues_url 'https://github.com/chef-cookbooks/stompserver/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/chef-cookbooks/stompserver'
+issues_url 'https://github.com/chef-cookbooks/stompserver/issues'
 
-chef_version '>= 11' if respond_to?(:chef_version)
+chef_version '>= 12.1'
